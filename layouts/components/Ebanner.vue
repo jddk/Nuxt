@@ -3,7 +3,7 @@
     <el-carousel indicator-position="intside" height="320px">
       <el-carousel-item v-for="item in banners" :key="item.name">
         <div style="width:100%;height:100%">
-          <el-image style="width: 100%; height: 100%" fit="cover" :src="item.url" />
+          <img style="width:100%;height:100%;object-fit: cover;" fit="cover" :src="item.url" />
         </div>
       </el-carousel-item>
     </el-carousel>

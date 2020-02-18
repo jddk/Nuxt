@@ -52,8 +52,8 @@
   height: 280px;
   background: #fff;
   color: #000;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   overflow: hidden;
 }
 .main-item {
@@ -72,9 +72,9 @@
 <template>
   <div class="PhoneNav phoneHide">
     <header class="header flex justify-between align-center">
-      <div class="logo">
+      <nuxt-link class="logo" to="/">
         <img class="logo-img" src="~/assets/logo.png" alt="logo" />
-      </div>
+      </nuxt-link>
       <h1 class="title">尊福机械</h1>
       <div class="menu" @click="mainSwitch = !mainSwitch">
         <img class="menu-img" src="~/assets/menu.svg" alt />

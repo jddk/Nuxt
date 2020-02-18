@@ -1,10 +1,10 @@
 <template>
   <div class="flex-text-between header phoneHide">
     <!-- 左侧logo -->
-    <div class="logo flex align-center">
+    <nuxt-link to="/" class="logo flex align-center">
       <img class="logo-img" src="~/assets/logo.png" alt="logo" />
       <h1 class="logo-h1">尊福机械</h1>
-    </div>
+    </nuxt-link>
     <!-- 右侧导航 -->
     <nav class="items flex">
       <nuxt-link v-for="(item,index) in navList" :key="index" :to="item.link">
