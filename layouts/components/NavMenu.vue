@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-text-between header">
+  <div class="flex-text-between header phoneHide">
     <!-- 左侧logo -->
     <div class="logo flex align-center">
       <img class="logo-img" src="~/assets/logo.png" alt="logo" />
@@ -42,6 +42,13 @@ export default {
   height: 70px;
   border-bottom: 1px solid #dcdfe6;
   margin-bottom: 10px;
+  padding: 0 20px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 .logo {
 }
@@ -69,5 +76,18 @@ export default {
 .item:hover {
   font-weight: 600;
   color: #00489a;
+}
+// 小于865px隐藏
+@media screen and(max-width:865px) {
+  .phoneHide {
+    display: none;
+  }
+}
+
+// 大于865px显示
+@media screen and(min-width:865px) {
+  .phoneHide {
+    display: flex;
+  }
 }
 </style>

@@ -36,6 +36,20 @@ export default {
         { name: '产品1', url: url },
         { name: '产品2', url: url },
         { name: '产品3', url: url },
+        { name: '产品4', url: url },
+        { name: '产品2', url: url },
+        { name: '产品3', url: url },
+        { name: '产品4', url: url },
+        { name: '产品1', url: url },
+        { name: '产品2', url: url },
+        { name: '产品3', url: url },
+        { name: '产品4', url: url },
+        { name: '产品2', url: url },
+        { name: '产品3', url: url },
+        { name: '产品4', url: url },
+        { name: '产品1', url: url },
+        { name: '产品2', url: url },
+        { name: '产品3', url: url },
         { name: '产品4', url: url }
       ]
     }
@@ -46,6 +60,7 @@ export default {
 <style lang="scss" scoped>
 .product {
   width: 16.6666666%;
+  min-width: 176px;
   display: inline-block;
   padding-right: 20px;
   padding-bottom: 20px;
